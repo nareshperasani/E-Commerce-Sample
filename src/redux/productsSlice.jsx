@@ -9,7 +9,7 @@ const initialState = {
 export const productsFetch = createAsyncThunk(
     "products/productsFetch",
     async ()=>{
-            const response = await axios.get("https://fakestoreapi.com/products?limit=12")
+            const response = await axios.get("https://fakestoreapi.com/products?limit=20")
             return response?.data
         }
 )

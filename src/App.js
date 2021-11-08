@@ -14,8 +14,8 @@ function App() {
         <Navbar/>
         <Switch>
           <Route path="/cart" component={Cart}/>
-          <Route path='/not-found' component={NotFound}/>
           <Route path="/" exact component={Home}/>
+          <Route path='/not-found' component={NotFound}/>
           <Redirect to="/not-found"/>
         </Switch>
       </Router>
